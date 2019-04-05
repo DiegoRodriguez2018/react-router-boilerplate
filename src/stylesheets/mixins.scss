@@ -1,0 +1,56 @@
+@mixin button-solid($color1:  rgb(10, 94, 179), $color2:white) {
+  background: $color1;
+  color: $color2;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  text-decoration:none;
+  border-radius: 4px;
+  transition: 200ms;
+  &:hover{
+    background: $color2;
+    color: $color1;
+    border: 1px solid $color1;
+  }
+}
+
+@mixin button-hollow($color1: rgb(10, 94, 179), $color2:white) {
+  background: $color2;
+  color: $color1;
+  border: 1px solid $color1;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  margin: .5rem;
+  text-decoration:none;
+  border-radius: 4px;
+  transition: 1000ms;
+  &:hover{
+    color:$color2;
+    background: $color1;
+  }
+}
+
+@mixin centerPageContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@mixin centeredColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin centerX{
+  display: flex;
+  justify-content: center;
+}
+
+@mixin pageHeader{
+  font-size: 2rem;
+}
